@@ -15,7 +15,7 @@ public class ProductService {
 
     public ProductService(){
         addProduct(new DigitalProduct(nextId++,"Ebook", 15.99,"Ebook.com", 90));
-        addProduct(new PhysicalProduct((nextId++,"Laptop",15.00, 40,30));
+        addProduct(new PhysicalProduct(nextId++,"Laptop",15.00, 40,"2*3*5"));
     }
 
     public List<Product> getAllProducts(){ //passing the ArrayList bcs we need it to return the products in the arraylist to us.
