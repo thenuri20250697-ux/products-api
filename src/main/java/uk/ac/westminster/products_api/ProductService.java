@@ -13,6 +13,11 @@ public class ProductService {
     List<Product> products = new ArrayList<>();
     private Long nextId =1L;
 
+    public ProductService(){
+        addProduct(new DigitalProduct(nextId++,"Ebook", 15.99,"Ebook.com", 90));
+        addProduct(new PhysicalProduct((nextId++,"Laptop",15.00, 40,30));
+    }
+
     public List<Product> getAllProducts(){ //passing the ArrayList bcs we need it to return the products in the arraylist to us.
         return products;
     }
@@ -23,6 +28,7 @@ public class ProductService {
         return product;
 
     }
+
 
         public Optional<Product> getProductById(long id) {
             return products.stream()
