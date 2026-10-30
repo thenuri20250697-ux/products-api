@@ -47,5 +47,14 @@ public class ProductService {
     }
 
 
+    public List<String> getAllSummaries() {
+        List<String> summaries = new ArrayList<>();
+        for (Product p : products) {
+            summaries.add(p.getSummary());
+        }
+        return summaries;
+    }
+
+
 
 }
